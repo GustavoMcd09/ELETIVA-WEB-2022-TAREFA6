@@ -37,21 +37,73 @@
           </div>
         </div>
       </nav>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/foods.png" class="d-block w-100 img-fluid" alt="foods">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/foods.png" class="d-block w-100" alt="foods">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="card">
+                    <h4>Começa o nosso cardápio</h4>
+                    <p>Comida fresca e saudável</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/meat.png" class="d-block w-100" alt="meat">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="card">
+                    <h4>Faça a sua reserva.</h4>
+                    <p>Confraternizações e datas especiais.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/spaghetti.png" class="d-block w-100" alt="spaghetti">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="card">
+                    <h4>Faça a sua reserva.</h4>
+                    <p>Confraternizações e datas especiais.</p>
+                </div>
               </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
           <h1 class="text-center">Menu Faça a Sua Escolha</h1>
           <br><h2 class="text-center">Prato Principal</h2>
           <br><h6 class="text-center">Todos os pratos acompanham arroz, feijão e as sobremesas do dia</h6>
           <div class="box">
             <div class="inlineBox text-center">
               <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com Batata</h1>
-                    <h1 class="inlineBoxText">R$ 30,00</h1>
+                    <h3>Bife com Batata</h3>
+                    <h3 class="inlineBoxText">R$ 30,00</h3>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -59,9 +111,9 @@
                     </div>
             </div>
             <div class="inlineBox text-center">
-              <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com Batata</h1>
-                    <h1 class="inlineBoxText">R$ 30,00</h1>
+              <img alt="chickenThigh" id="chickenThigh" src="./assets/chickenThigh.png">
+                    <h3>Coxa de Frango Crocante</h3>
+                    <h3 class="inlineBoxText">R$ 25,00</h3>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -69,9 +121,9 @@
                     </div>
             </div>
             <div class="inlineBox text-center">
-              <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com Batata</h1>
-                    <h1 class="inlineBoxText">R$ 30,00</h1>
+              <img alt="potRost" id="potRost" src="./assets/potRost.png">
+                    <h3>Carne de Panela</h3>
+                    <h3 class="inlineBoxText">R$ 22,00</h3>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -84,9 +136,9 @@
           <br><h6 class="text-center">Porções para uma pessoa</h6>
           <div class="box">
             <div class="inlineBox text-center">
-              <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com Batata</h1>
-                    <h1 class="inlineBoxText">R$ 30,00</h1>
+              <img alt="farofa" id="farofa" src="./assets/farofa.png">
+                    <h3>Farofa</h3>
+                    <h3 class="inlineBoxText">R$ 10,00</h3>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -94,9 +146,9 @@
                     </div>
             </div>
             <div class="inlineBox text-center">
-              <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com Batata</h1>
-                    <h1 class="inlineBoxText">R$ 30,00</h1>
+              <img alt="salad" id="salad" src="./assets/salad.png">
+                    <h3>Salada</h3>
+                    <h3 class="inlineBoxText">R$ 8,00</h3>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -104,9 +156,9 @@
                     </div>
             </div>
             <div class="inlineBox text-center">
-              <img alt="potatoSteak" id="potatoSteak" src="./assets/potatoSteak.png">
-                    <h1>Bife com Batata</h1>
-                    <h1 class="inlineBoxText">R$ 30,00</h1>
+              <img alt="crackling" id="crackling" src="./assets/crackling.png">
+                    <h3>Torresmo</h3>
+                    <h3 class="inlineBoxText">R$ 12,00</h3>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
                         <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -146,7 +198,7 @@
                   <h5 class="modal-title">Total do Pedido:</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="alert">
                   <div id="exit">
                   </div>
                   <div id="exit1">
@@ -158,7 +210,6 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
               </div>
             </div>

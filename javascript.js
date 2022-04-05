@@ -26,11 +26,6 @@ function calc(){
     document.querySelector('#exit1').innerHTML = text1;
 
 
-    for (let input of quantities) {
-        end.innerHTML += `<br><li>Prato: ${prods[input.id-1].name} - Preço unitário: ${formatter.format(prods[input.id-1].price)} - Quantidade: ${input.value}`
-    }
-
-
     var sum = [30, 25, 22, 10, 8, 12]
     var endPrice = 0,
     quantSum = 0;
@@ -42,10 +37,12 @@ function calc(){
             var totalCost = sum[i] * quant;
             endPrice += totalCost;
             quantSum += quant;
+            end.innerHTML += `<br><li>Prato: ${prods[i].name} - Preço unitário: ${formatter.format(prods[i].price)} - Quantidade: ${quant}`
         }
     }
-    calculation.innerHTML += "<br><br>Preço final R$ " + endPrice + ",00";
     if(quantSum == 0) {
-        calculation.innerHTML += "<br>Selecione pelo menos um prato!!!";
+        var alert1 = "Selecione pelo menos um prato!!!";
+        document.querySelector('#alert').innerHTML = alert1;
     }
+    calculation.innerHTML += "<br><br>Preço final R$ " + endPrice + ",00";
 }
