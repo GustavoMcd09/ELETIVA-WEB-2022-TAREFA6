@@ -7,6 +7,7 @@ var prods = [
     { id: 6, name: "Torresmo", price: 12.00 },
 ];
 
+
 function calc(){
     end.innerHTML = '';
     calculation.innerHTML = '';
@@ -26,23 +27,18 @@ function calc(){
     document.querySelector('#exit1').innerHTML = text1;
 
 
-    var sum = [30, 25, 22, 10, 8, 12]
-    var endPrice = 0,
+    var endPrice = 0;
     quantSum = 0;
 
     for(i = 0 ; i < 6 ; i++){
         quant = document.getElementById(i + 1).value;
 
         if (quant != 0) {
-            var totalCost = sum[i] * quant;
+            var totalCost = prods[i].price * quant;
             endPrice += totalCost;
             quantSum += quant;
-            end.innerHTML += `<br><li>Prato: ${prods[i].name} - Preço unitário: ${formatter.format(prods[i].price)} - Quantidade: ${quant}`
+            end.innerHTML += `<br><li>Prato: ${prods[i].name} - Preço unitário: ${formatter.format(prods[i].price)} - Quantidade: ${quant}`;
         }
-    }
-    if(quantSum == 0) {
-        var alert1 = "Selecione pelo menos um prato!!!";
-        document.querySelector('#alert').innerHTML = alert1;
     }
     calculation.innerHTML += "<br><br>Preço final R$ " + endPrice + ",00";
 }
